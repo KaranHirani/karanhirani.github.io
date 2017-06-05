@@ -72,11 +72,22 @@
                <div>
                   <p>If you would like to get in contact with me, feel free to fill out the form, and I will get in contact with you ASAP.</p>
                </div>
-               <form method="POST" action="http://formspree.io/khirani@vt.edu">
-                  <input type="email" name="email" placeholder="Your email">
-                  <textarea name="message" placeholder="Your message"></textarea>
-                  <button type="submit">Send</button>
-               </form>
+               <form
+  action="mailto:khirani@vt.edu"
+  method="POST"
+  enctype="multipart/form-data"
+  name="EmailTestForm">
+
+Your Name:<br>
+<input type="text" size="20" name="VisitorName"><br><br>
+
+Your Comment:<br>
+<textarea name="VisitorComment" rows="4" cols="20">
+</textarea><br><br>
+
+<input type="submit" value="Email This Form">
+
+</form>
             </div>
          </section>
          <!-- Scroll to Top Button (Only supposed to be visible on small and small screen sizes)-->
